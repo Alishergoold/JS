@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <div class="card__body">
+    <h2 id="cardTitle">Card Body</h2>
+    <div class="card">
+      <h4 id="card">Card</h4>
+      <div class="card__title">Card Title</div>
+      <div class="card__subtitle">Card Subtitle</div>
+      <div class="card__img"><img class="card__image" src="/images/cloud1.png" alt="foto"></div><!-- <img class="card__image" src="/screen01.png" alt="foto">-->
+      <div class="card__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum officiis a, voluptatem vero molestiae sed!</div>
+      <button class="card__button" onclick="ozgar()">O'zgar</button>
+      <input type="color" id="color__input">
+    </div>
+  </div>
+
+  <input type="number" id="input__font">
+
+  <div>
+    <input id="title" type="text">
+    <input id="matn" type="text">
+    <button class="button" onclick="add()">QO'SHISH</button>  
+    <h4 id="endTitle"></h4>
+    <p id="endText"></p>
+  </div>    
+
+  <div id="atrib">Atribut ning class va idlarini o'zgartiramiz</div>
+
+  <div class="box">
+    Inputga yozganimiz to'g'ridan-to'gri chiqadi <br>
+    <input type="text" placeholder="Matn kiriting" id="input" onkeypress="yoz(this)">
+    <input type="text" placeholder="Matn kiriting" id="input" onkeypress="yoz(this)">
+    <p id="text"></p>
+  </div>
+
+  <div id="box">
+    <div style="display: block; cursor: pointer;" class="box__title" onclick="kirish()">O'zbekiston terma jamoasi jahon chempionatidan quruq qoldi. <em>Batafsil...</em></div>
+
+    <div class="box__body">
+      <div class="box__text"></div>
+      <div id="box__textarea"></div>
+      <div id="box__button">
+      <p id="bParag"></p>  
+      </div>
+    </div>  
+  </div>
+  <br>
+  <br>
+
+  <h1>Eventlar</h1>
+  <input type="button" id="et" value="Meni bos">
+  <input type="button" id="elt" value="Kordinatalar"> <br><br>
+  <img id="img" src="/images/cloud1.png" alt="foto">
+  <script src="dompractica.js"></script> 
+</body>
+</html>

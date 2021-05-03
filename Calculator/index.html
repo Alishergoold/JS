@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Calculator</title>
+</head>
+<body>
+  <h1> Calculator</h1>
+
+  <div class="calculator">
+   <input type="text" class="calc__head" />
+   <div class="calc__body">
+     <div class="calc__row">
+       <button class="calc__num" onclick="val(event)">8</button>
+       <div class="calc__num" onclick="val(event)">2</div>
+       <div class="calc__num" onclick="val(event)">3</div>
+       <div class="calc__num" id="equal">=</div>
+     </div>
+     <div class="calc__row">
+       <div class="calc__num" onclick="val(event)">4</div>
+       <div class="calc__num" onclick="val(event)">5</div>
+       <div class="calc__num" onclick="val(event)">6</div>
+       <div class="calc__oper">+</div>
+     </div>
+     <div class="calc__row">
+       <div class="calc__num" onclick="val(event)">7</div>
+       <div class="calc__num" onclick="val(event)">8</div>
+       <div class="calc__num" onclick="val(event)">9</div>
+       <div class="calc__oper">-</div>
+     </div>
+     <div class="calc__row">
+       <div class="calc__num" id="nul">C</div>
+       <div class="calc__num" onclick="val(event)">0</div>
+       <div class="calc__num">/</div>
+       <div class="calc__oper">*</div>
+     </div>
+
+   </div>
+ </div>
+
+
+<script src="main.js"></script> 
+</body>
+</html>

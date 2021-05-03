@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>To do app</title>
+</head>
+<body>
+
+<div class="wrapper">
+  <h1 class="todotitle">To Do App</h1>
+
+  <div class="reja">
+    <form action="" onsubmit="add(event)">
+      <input type="text" name="name" id="reja" placeholder="Vazifani kiriting...">
+      <button class="btn">Vazifani qo'shing</button>
+    </form>
+  </div>
+
+  <div class="colors">
+    <div class="box__1">Yangi qo'shilgan vazifalar</div>
+    <div class="box__2">Bajarilayotgan vazifalar</div>
+    <div class="box__3">Bajarib bo'lingan vazifalar</div>
+  </div>
+
+  <div class="box">
+    <h4 class="title todotitle">Rejadagi vazifalar</h4>
+    <div class="rejbox">
+      <div class="row">
+        <div class="rejvaz">Vazifalar qatori</div>
+        <button id="checks" class="checks" onclick="addColor(event)">O</button>
+        <button id="checkstwo" class="checks" onclick="addColorTwo(event)">X</button>       
+      </div>
+    </div>
+  </div> 
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>

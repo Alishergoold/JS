@@ -1,0 +1,100 @@
+body {
+  background-color: rgb(245, 245, 245);
+  font-family: Arial;
+}
+
+.wrapper {
+  width: 80%;
+  border: 1px solid #757575;
+  border-radius: 4px;
+  margin: 100px auto;
+  padding: 20px;
+  background-color: #9d209b17;
+}
+
+.todotitle {
+  width: 50%;
+  margin: 0px auto 40px;
+  text-align: center;
+  color: #fff;
+  background-color: purple;
+  padding: 10px 15px;
+}
+
+#reja {
+  width: 80%;
+  padding: 10px;
+  font-size: 18px;
+  font-family: "Arial";
+}
+
+.btn {
+  margin: 10px 0px;
+  padding: 10px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+}
+
+.colors {
+  margin-top: 40px;
+}
+
+.colors div {
+  width: 60%;
+
+  margin-bottom: 15px;
+  padding: 8px 10px;
+  border: 1px solid #757575;
+  color: #fff;
+}
+
+.box__1 {
+  background-color: #4c0808;
+}
+
+.box__2 {
+  background-color: #ad1313;
+}
+
+.box__3 {
+  background-color: #095216;
+}
+
+.box {
+  margin-top: 50px;
+  border: 1px solid #e0c7c7;
+  padding: 10px;
+}
+
+.title {
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #4c0808;
+}
+
+.rejvaz {
+  width: 70%;
+  border: 1px solid #c3c3c3;
+  padding: 8px 10px;
+  margin: 10px 0px;
+  color: #e0c7c7;
+}
+
+.checks {
+  text-align: center;
+  width: 10%;
+  background-color: #c3c3c3;
+  padding: 8px 10px;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <main id="hello">
+    Welcome DoM course.
+   <h2 id="id">H2 man</h2> 
+   <h2 id="matn">h2 2man</h2>
+  </main>
+
+  <ul class="group">
+    <li class="item">li 1 man</li>
+    <li class="item">li 2 man</li>
+    <li class="item">li 3 man</li>
+  </ul>
+
+  <p id="demo">Click me.</p>
+
+  <h2 id="sar">Salom</h2>
+
+  <!--<input type="text" id="name" name="ism" onchange="onInputChange(event)">-->
+  <input type="text" id="name" name="ism" onchange="onInputChange(this)">  <!-- this = event.target. this bu elementni o'zini qayataradi-->
+  <br>
+  <input type="text" id="email" name="email">
+  <input type="password" id="pass" name="password">
+
+
+  <button id="btn" onclick="clickBtn(event)">Send</button>
+  <button id="btn" ondblclick="clickBtn(event)">DblClick</button>
+<br> <br>
+
+
+  <form action="" onsubmit="submitHandler(event)">
+    <label for="name">Enter Name:</label>
+    <input type="text" name="name" id="name"> <br> <br>
+    <label for="email">Enter Email:</label>
+    <input type="email" name="email" id="email"> <br> <br>
+    <label for="pass">Enter Password:</label>
+    <input type="password" name="password" id="pass">  <br> <br>
+    <button type="submit" >Send</button>
+  </form>
+
+  <table>
+    <tr>
+      <td id="nam">Name</td>
+      <td id="ema">Email</td>
+      <td id="pas">Password</td>
+    </tr>
+  </table>
+
+  <script src="domreact.js"></script> 
+</body>
+</html>
