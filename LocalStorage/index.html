@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LocalStorage</title>
+</head>
+<body>
+
+  <div class="container">
+    <div class="user__column">
+      <div class="user__info">
+        <div class="user__left">
+          <div class="user__img">
+          </div>
+          <div class="user__btn">
+            <button>User Picture</button>
+          </div>
+        </div>
+
+        <div class="user__right">
+          <div class="about__title">About</div>
+          <div class="about__username">about__username</div>
+          <div class="about__email">about__email</div>
+          <div class="about__phone">about__phone</div>
+          <div class="about__password">about__password</div>
+        </div>
+      </div>
+    </div>
+
+<script>
+/*
+  localStorage - malumotlarni biz o'chirmaguncha o'zida saqlaydigan funsiya. LS faqat string qabul qiladi.
+  LS obyekt qabul qilishi uchun malumotni 1-[] 2-{} natija [{}] shunday saqlaymiz
+
+  Storage {length: 0}
+  localStorage.setItem('keys', 'values') // LS ga malumotlar qo'shish
+
+  localStorage
+  Storage {keys: "values", length: 1}keys: "values"length: 1__proto__: Storage
+  localStorage.setItem('name', 'Xasan') // LS ga malumotlar qo'shish
+
+  localStorage
+  Storage {name: "Xasan", keys: "values", length: 2} // Natija
+*/
+ 
+/*
+localStorage.setItem('phone', [23,45,67])
+localStorage
+Storage {name: "Xasan", keys: "values", phone: "23,45,67", length: 3} // LS ga to'ridan to'ri array berib bo'lmaydi
+*/
+
+/*
+localStorage.setItem('keys', JSON.stringify({model:'nexia', year:2021, km:0})) // LS dagi malumolarni JSON string farmatida saqlimiz va kerak vaqtda chaqiramiz.
+
+localStorage
+Storage {name: "Xasan", keys: "{"model":"nexia","year":2021,"km":0}", phone: "23,45,67", length: 3}
+
+localStorage.getItem('datas')  // LS dan malumot olish
+"{\"model\":\"nexia\",\"year\":2021,\"km\":0}"  // JSON format
+JSON.parse(localStorage.getItem('datas')) // JSON formatdagi malumni obyektga o'giramiz
+{model: "nexia", year: 2021, km: 0}
+*/
+
+/*
+localStorage.setItem('todo', JSON.stringify([{title: 'wake up 6', status:'notCompleted'}, {fruit:"apple", color:"red"}, {model:"Malibu", city:"New York"}]))
+ 
+localStorage
+Storage {keys: "{"model":"nexia","year":2021,"km":0}", datas: "{"model":"nexia","year":2021,"km":0}", todo: "[{"title":"wake up 6","status":"notCompleted"},{"f…lor":"red"},{"model":"Malibu","city":"New York"}]", name: "Xasan", phone: "23,45,67", …}
+// 68 qatorda LS ga todo keyini arrey ichi obyekt qilib saqladik
+localStorage.getItem('todo') // todo ni chaqirdik u bizga JSON bo'lib keldi
+"[{\"title\":\"wake up 6\",\"status\":\"notCompleted\"},{\"fruit\":\"apple\",\"color\":\"red\"},{\"model\":\"Malibu\",\"city\":\"New York\"}]"
+JSON.parse(localStorage.getItem('todo')) // todo ni parse qilib o'zimizga kerakli formatga o'tkazdik
+(3) [{…}, {…}, {…}]
+0: {title: "wake up 6", status: "notCompleted"}
+1: {fruit: "apple", color: "red"}
+2: {model: "Malibu", city: "New York"}
+*/
+
+
+</script>
+</body>
+</html>
+
