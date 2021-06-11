@@ -710,7 +710,9 @@ footer {
 /* Cinema__wrap ==================== */
 .cinema__wrap {
   width: 100%;
-  background-image: linear-gradient(to right, rgba(250, 250, 250, 0.9) 0%, rgba(3, 37, 65, 0) 1000%), url(Photo/cinemaTreyler.jpg);
+  height: 400px;
+  background-color: #ccc;
+  /*background-image: linear-gradient(to right, rgba(250, 250, 250, 0.9) 0%, rgba(3, 37, 65, 0) 1000%), url(Photo/cinemaTreyler.jpg);*/
 }
 
 .cinema__row {

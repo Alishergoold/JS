@@ -34,6 +34,7 @@ function myFunction(event){
 const apiKey = "a923a64ca28f8ca95585d957f0db07ff";
 const cardRow = document.querySelector('.popular__row');
 
+
 fetch(`https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&language=en-US&page=1.org/3/movie/upcoming?api_key=a923a64ca28f8ca95585d957f0db07ff&language=en-US&page=1`)
   .then((res) => res.json())
 
@@ -41,25 +42,25 @@ fetch(`https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&language=en-
     let {results} = movies;
 
     results.forEach((movie) => {
-      let pics = document.querySelector('.card');
       let titles = document.querySelector('.card__title').innerHTML = movie.title;
       let relaseDate = document.querySelector('.card__subtitle').innerHTML = movie.release_date;
-      let cardFoto = document.querySelector('.card__foto');
       Movies.getOneMovieImage(movie.backdrop_path);
   
       let cards = `
+      <div class="card">
         <div class="card__img">
-          <img src="Photo/Popular/Angel_Mesti.jpg" alt="">
-          <a class="card__more" href="#">${cardFoto}
-            <img class="card__foto" src="" alt="">
+          <img src="https://image.tmdb.org/t/p/w500${movie.poster_path}" alt="#">
+          <a class="card__more" href="#">
+            <img class="card__foto" src="./Photo/Icons/glyphicons-basic-947-circle-more-white-4c440dfc1b0e626c70f4853dbbce9c4d1f2c5d8f3e05a7d3df47881cbd816adf.svg" alt="">
           </a>
         </div>
         <div class="card__footer">
           <div class="card__ring">86</div>
-          <div class="card__title">${titles}</div>
+          <div class="card__title"><a href="./cinemaInfo.html">${titles}</a></div>
           <div class="card__subtitle">${relaseDate}</div>
           <div class="hover"></div>
         </div>
+      </div>
       `
       let cardsRow = cardRow.innerHTML += cards
      
@@ -86,12 +87,34 @@ class Movies {
     fetch(`https://image.tmdb.org/t/p/w500/${imageUrl}`)
       .then((res) => res.json())
       .then((movies) => {      
-          console.log(movies)
+          console.log(movies, "mmmmmmmmmm")
       })
       .catch((err)=>{
         console.log(err, "ERROR");
       });  
   }
 }
-Movies.getOneMovie(726684);
+//Movies.getOneMovie(726684);
+
+
+
+
+
+
+
+//fetch(`https://api.themoviedb.org/3/movie/337404?api_key=a923a64ca28f8ca95585d957f0db07ff&language=en-US`)
+//  .then((res) => res.json())
+//  .then((movies) => {      
+      
+    
+
+
+//  })
+//  .catch((err)=>{
+//    console.log(err, "ERROR");
+//  });  
+
+
+
+
 
